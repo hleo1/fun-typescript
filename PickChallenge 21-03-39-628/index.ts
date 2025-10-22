@@ -25,10 +25,10 @@ type MyPick3<Interface, Chosen_Properties>  = {
 
 type ToDoPreview = MyPick3<Todo, "title" | "mystery">
 
-let ToDo: ToDoPreview = {
-    title: "hey", 
-    myster: "no"
-}
+// let ToDo: ToDoPreview = {
+//     title: "hey", 
+//     myster: "no"
+// }
 
 
 // //Idea 3
@@ -45,3 +45,24 @@ let ToDo: ToDoPreview = {
 // }
 
 // type TodoPreview = MyPickTest<Todo, 'title' | 'completed' | 'mystery'>
+
+
+interface Knight {
+    name: string;
+    hadBreakfast: boolean;
+    king: string;
+}
+let SirLancelot: Knight = {
+    name: "Lancelot",
+    hadBreakfast: false,
+    king: "Arthur",
+}
+
+interface InterestingKnight {
+    name: string, 
+    king: "Arthur" 
+  }
+let OPKnight : InterestingKnight = {
+  name : "Pants-a-Lot",
+  king : "Arthur"
+}
